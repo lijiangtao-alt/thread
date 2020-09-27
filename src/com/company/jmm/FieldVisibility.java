@@ -1,5 +1,7 @@
 package com.company.jmm;
 
+import com.company.singleton.Singleton8;
+
 /**
  * @Description 演示可见性带来的问题, volatile可以强制每一次读取到的值都是最新的
  * * 四种结果：
@@ -25,6 +27,9 @@ public class FieldVisibility {
     }
 
     public static void main(String[] args) {
+
+//        Singleton8.INSTANCE.whatever();
+
         while (true) {
             FieldVisibility test = new FieldVisibility();
 
